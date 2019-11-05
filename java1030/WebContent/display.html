@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>테이블 속성</title>
+<style>
+	girlgroup{display:table; border:2px solid blue;}
+	data{display:table-row-group;}
+	name, company{display:table-cell; border:1px solid silver;}
+	
+	div{
+		resize:both;
+		overflow:auto;
+		border:2px solid blue;
+		width:200px;
+		height:100px;
+	}
+</style>
+</head>
+<body>
+
+<div>크기 변경 가능합니다.</div><br/>
+	<girlgroup>
+		<data>
+			<name>소녀시대</name>
+			<company>SM</company>
+		</data>
+		<data>
+			<name>원더걸스</name>
+			<company>JYP</company>
+		</data>
+		<data>
+			<name>트와이스</name>
+			<company>JYP</company>
+		</data>
+		<data>
+			<name>연우</name>
+			<company>It's mine</company>
+		</data>
+	</girlgroup>
+</body>
+</html>

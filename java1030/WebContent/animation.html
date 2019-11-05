@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	@-webkit-keyframes keyany{
+		from{
+			left:0;
+			top:0px;
+			-webkit-transform:rotate(0deg);
+		}
+		50%{
+			left:0px;
+			top:300px;
+			-webkit-transform:rotate(0deg);
+		}
+		80%{
+			left:450px;
+			top:150px;
+			-webkit-transform:rotate(1000deg);
+		}
+		90%{
+			left:440px;
+			top:250px;
+			-webkit-transform:rotate(1000deg);
+		}
+		to{
+			left:450px;
+			top:300px;
+			-webkit-transform:rotate(1800deg);
+		}
+	}
+	img{
+		position:absolute;
+		-webkit-animation-name:keyany;
+		-webkit-animation-duration:5s;
+		-webkit-animation-iteration-count:infinite;
+		-webkit-animation-direction:alternate;
+	}
+</style>
+
+</head>
+<body>
+	<img src="./images/soccer.png" width="200" height="190"/>
+</body>
+</html>

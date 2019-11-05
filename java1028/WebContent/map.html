@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ImageMap</title>
+</head>
+<body>
+	<!-- 이미지를 클릭하면 https://www.youtube.com으로 이동 -->
+	<a href="https://www.youtube.com">
+		<img src="./images/4.jpg"width="300"height="300"/>
+	</a><br/><br/>
+	
+	<img src="./images/4.jpg"width="300"height="300"usemap="#yeoun"/>
+	<map name="yeoun">
+		<area shape="rect"coords="0,0,150,300"target='_blank'alt="left"
+		href="https://www.youtube.com"/>
+		<area shape="rect"coords="150,0,300,300"target="_blank"alt="right"
+		href="https://www.google.com"/>
+	</map>
+</body>
+</html>

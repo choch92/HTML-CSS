@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입</title>
+</head>
+<body>
+	<form action="register.jsp">
+		<fieldset>
+			<legend>회원가입</legend>
+			
+			<label for="id">아이디</label>
+			<input type="text"id="id"name="id"size="20"/>
+			<input type="button"id="idcheck"value="중복확인"/>
+			<div id="msg"></div><br/>
+			<script>
+				document.getElementById("id").addEventListener("blur",function(e){
+					if(document.getElementById("id").value=="root"){
+						document.getElementById("msg").innerHTML="사용 불가능 한 아이디 입니다."
+						document.getElementById("msg").style.color="red"
+					}
+				});
+			
+			</script>
+			
+			<label for="pw">비밀번호</label>
+			<input type="password"id="pw"name="pw"size="18"/><br/><br/>
+			
+			<label for="email">이메일</label>
+			<input type="text"id="email"name="email"size="20"/>@
+			<select name="corp">
+				<option value="direct">직접입력</option>
+				<option value="naver">naver.com</option>
+				<option value="daum">daum.net</option>
+				<option value="gmail">gmail.com</option>
+			</select><br/><br/>
+			
+			<label for="gender">성별</label>
+			<input type="radio"name="gender"checked="checked"value="man"/>남자
+			<input type="radio"name="gender"value="woman"/>여자<br/><br/>
+			
+			<label for="image">이미지</label>
+			<input type="file"id="image"name="image"accept=".gif, .jpg, .png, .jpeg"/><br/><br/>
+			
+			<label for="story">하고 싶은 이야기</label>
+			<br/>
+			<textarea row="10"cols="30"id="story"name="story"></textarea>
+			<br/>
+			
+			<input type="submit"value="회원가입"/>
+			<input type="reset"value="작성취소"/>
+			<input type="button"value="메인으로"onclick="location.href=/"/>
+			
+			<select size="3" multiple="multiple">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+				</select>
+			
+		</fieldset>
+	</form>
+</body>
+</html>
